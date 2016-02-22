@@ -1,0 +1,584 @@
+\documentclass[12pt,a4paper,english]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{graphicx}
+\usepackage{epsfig}            % To allow figures
+\usepackage{pstricks}          % To draw color pictures directly
+\usepackage{fancyhdr}
+\usepackage[verbose,a4paper,tmargin=30mm,bmargin=37.5mm,lmargin=30mm,rmargin=30mm]{geometry}
+\usepackage{helvet}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{rotating}
+\usepackage{amssymb}       % More special characters          
+\usepackage{amsmath}       % More mathematical characters
+\usepackage{natbib} % Needed e.g. for \citep
+\usepackage{multirow}
+\usepackage{verbatim}          % Use the verbatim styles
+\definecolor{METblue}{cmyk}{0.85,0,0.2,0.2}
+\usepackage{titlesec}
+\titleformat{\section}
+  [block]
+  { \normalfont\sffamily\Large\bfseries\color{METblue} }
+  {\makebox[2em][r]{\thesection}}
+  {5mm}
+  {\vspace{5mm}}
+
+\titleformat{\subsection}[block]%
+  {\normalfont\sffamily\bfseries}%
+  {\makebox[2em][r]{\thesubsection}}%
+  {5mm}
+  {\vspace{3mm}}[]
+\titleformat{\subsubsection}[block]%
+  {\normalfont\sffamily\bfseries}%
+  {\makebox[3em][r]{\thesubsubsection}}%
+  {5mm}
+  {\vspace{3mm}}[]
+
+% Titlespacing syntax: 
+\titlespacing*{\section}{-17mm}{5mm}{0mm}
+\titlespacing*{\subsection}{-13.5mm}{5mm}{0mm}
+\titlespacing*{\subsubsection}{-17.5mm}{5mm}{0mm}
+
+%%% Formatting the table of contents
+\usepackage{tocloft}
+\renewcommand{\cfttoctitlefont}{\sffamily\bfseries\color{METblue}\Large}
+\providecommand{\cftchapfont}{\sffamily\bfseries }
+\renewcommand{\cftsecfont}{\sffamily\bfseries }
+\renewcommand{\cftsubsecfont}{\sffamily }
+\renewcommand{\cftsubsubsecfont}{\sffamily }
+\providecommand{\cftsubsubsubsecfont}{\sffamily }
+\renewcommand{\cftfigfont}{Figure }
+\renewcommand{\cfttabfont}{Table }
+\providecommand{\cftchappagefont}{\sffamily}
+\renewcommand{\cftsecpagefont}{\sffamily\bfseries}
+\renewcommand{\cftsubsecpagefont}{\sffamily}
+\renewcommand{\cftsubsubsecpagefont}{\sffamily}
+\providecommand{\cftsubsubsubsecpagefont}{\sffamily}
+
+\renewcommand{\baselinestretch}{1.33}
+
+% --------------------------------------
+
+\begin{document}
+
+\bibliographystyle{ams}
+\thispagestyle{empty}  % Hide page numbers
+
+\noindent
+\begin{tabular}{@{} p{63mm} p{50mm} r}
+\includegraphics*[]{met_rapport_logo_eng} % Automatically uses PDF or EPS in same directory depending on latex or pdflatex.
+&
+\fontsize{27.5pt}{33pt} \selectfont \bf \sffamily MET{\color{gray} report}
+&
+ \begin{minipage}[b]{28mm}
+  \begin{flushright}
+   \footnotesize \sffamily No. X/2015 \\ ISSN 2387-4201 \\ Category              % Report number and Category
+  \end{flushright}
+ \end{minipage}
+\end{tabular}
+
+\vfill
+
+\begin{flushright}
+{\fontsize{36pt}{43.2pt}\selectfont \bf \sffamily A cruise in the Oslofjord}          % Title
+
+\vspace{5mm}
+{\fontsize{12.5pt}{15pt}\selectfont \sffamily January 2016                                          % Subtitle
+\\
+\sffamily Karina Hjelmervik, Nils Melsom Kristensen, Andre Staalstr\o m, ...                                         % Author name(s)
+}
+\end{flushright}
+
+%\vspace{25mm}
+\vspace{2mm}
+
+\begin{figure}[!h]
+\begin{center}
+\includegraphics*{met_rapport_monster}          % Graphic. Automatically uses PDF or EPS in same directory depending on latex or pdflatex.
+\end{center}
+\end{figure}
+
+%\newpage
+
+%\thispagestyle{empty}  % Hide page numbers
+
+\clearpage
+
+\setlength{\unitlength}{1mm}  %Needed for picture environment
+
+\begin{table}[!ht]
+
+\begin{tabular}[c]{lr}
+\vspace{5mm}
+\includegraphics*{met_rapport_logo_eng} & \hspace{43mm}
+{\fontsize{27.5pt}{33pt}\selectfont \bf \sffamily MET{\color{gray} report}}\\
+\end{tabular}
+
+\sffamily{
+\begin{tabular}[t]{|p{110mm}|p{40mm}|} \hline
+{\bf \sffamily Title}                  & {\bf \sffamily Date}               \\ 
+Cruise in the Oslofjord
+                             & \today                   \\ \hline
+{\bf \sffamily Section}                & {\bf \sffamily Report no.}         \\ 
+ Type                        &  X/2016                  \\ \hline
+{\bf \sffamily Author(s)}                 & {\bf \sffamily Classification}     \\ 
+Karina Hjelmervik, Nils Melsom Kristensen, Andre Staalstr\o m, ...                 
+                             & \begin{picture}(20,4)(-2,-1.0)
+                               \put (0,0){\circle*{4}}
+                               \put (7,0){\makebox(0,0){Free}}
+                               \put (15,0){\circle{4}}
+                               \put (27,0){\makebox(0,0){Restricted}}
+                               \end{picture}
+                               \\ \hline
+{\bf \sffamily Client(s)}              & {\bf \sffamily Client's reference} \\ 
+Client name                  &               \\ \hline
+\end{tabular}
+
+\begin{tabular}[t]{|p{154.3mm}|}
+{\bf \sffamily Abstract}                                          \\
+Abstract text...
+\\
+\\
+\\
+%\\[50mm] % Add whitespace if necessary
+\\ \hline
+{\bf \sffamily Keywords}                                          \\ 
+  relevant, keywords, here    \\ 
+\hline
+\end{tabular}
+}
+
+\begin{tabular}[t]{cc}
+                             &                            \\
+                             &                            \\
+                             &                            \\
+\line(1,0){70}               & \line(1,0){70}             \\ 
+Disciplinary signature       & Responsible signature      \\
+%Jan Erik Haugen             & \O{}ystein Hov             \\       % Add names if needed
+\hspace{75mm}                & \hspace{75mm}              \\
+
+\end{tabular}
+\end{table}
+
+\clearpage
+
+\thispagestyle{fancy} % footer from fancyhdr package
+\headheight=15pt
+\renewcommand{\headrulewidth}{0pt}
+
+%\clearpage
+\section*{\hspace{17mm}Abstract}
+Abstract text...
+
+%\clearpage
+
+\vfill
+
+\fancyfoot{
+% If abstract on separate page is not needed, move the following table to the page before
+\begin{tabular}[b]{p{40mm}p{25mm}p{25mm}p{25mm}p{25mm}}
+ \begin{minipage}[l]{40mm} \tiny \color{METblue} {\bf Norwegian Meteorological Institute}\\ Org.no 971274042\\ post@met.no\\ www.met.no / www.yr.no
+ \end{minipage} & 
+ \begin{minipage}[l]{25mm} \tiny \color{METblue} {\bf Oslo}\\ P.O. Box 43, Blindern\\ 0313 Oslo, Norway\\ T. +47 22 96 30 00
+ \end{minipage} &
+ \begin{minipage}[l]{25mm} \tiny \color{METblue} {\bf Bergen}\\ All\'egaten 70\\ 5007 Bergen, Norway\\ T. +47 55 23 66 00
+ \end{minipage} & 
+ \begin{minipage}[l]{25mm} \tiny \color{METblue} {\bf Troms\o}\\ P.O. Box 6314, Langnes\\ 9293 Troms\o, Norway\\ T. +47 77 62 13 00
+ \end{minipage} & 
+ \begin{minipage}[l]{25mm} \tiny \color{METblue} 
+ \end{minipage}
+\end{tabular}
+}
+
+\clearpage
+\tableofcontents
+
+\clearpage
+% Begin arabic page numbering (starts on 1)
+%\pagenumbering{arabic}
+
+\section{Introduction}
+Provided is a documentation of a pilot scientific cruise in the Oslofjord 21-23 September 2015. The cruise was an experiment to examine if more field test would benefit the validation of the new Oslofjord model (ref. teknisk rapport). The cruise is carried out as part of the FjordOs project.
+
+\begin{figure}[tb]
+\centerline{
+\includegraphics*[width=\textwidth]{Figurer/Vannstand}}
+\caption{\small
+Observed waterlevel at Oscarsborg in September 2015. Data obtained from www.vannstand.no.}
+\label{fig:Waterlevel}
+\end{figure}
+
+\begin{figure}[tb]
+\centerline{
+\includegraphics*[width=\textwidth]{Figurer/River}}
+\caption{\small
+Observed flow rate of the Drammen river measured in Mj\o ndalen September 2015. Data obtained from NVE. The data is not quality assured.}
+\label{fig:River}
+\end{figure}
+
+\begin{figure}[tb]
+\centerline{
+\includegraphics*[width=\textwidth]{Figurer/Gullholmen_vind_sep2015}}
+\caption{\small
+The hourly mean (black) and maximum (red) vind velocity at Gullholmen during the time of the cruise. Data obtained from www.yr.no.}
+\label{fig:Wind}
+\end{figure}
+
+\section{Weather conditions}
+
+The storm "Petra" hit Buskerud, Vestfold, Telemark, and Agder from Monday 14 to Friday 18 September 2015. The storm was caused by a main low pressure in the English channel which moved northwards over the North Sea. The low pressure caused an increased water level in the Oslo fjord from the 17 to 18 September before normalizing around the 20 September (Fig.~\ref{fig:Waterlevel}).
+
+Due to the heavy rainfall that followed, rivers and streams were flooded and caused an increased fresh water flow into the fjord. There are two large rivers connected with the Oslo fjord, one in Drammen and the other in Fredrikstad. The river in Drammen had an increase from around 650 m$^3$/s to around 1550 m$^3$/s from the 15 to 18 September (Fig.~\ref{fig:River}). The volume flux slowly descended before reaching its more normal state in the beginning of November. 
+
+During the cruise the weather was sunny with light or gentle breeze (Fig.~\ref{fig:Wind}). The direction Monday afternoon was from south  and thereafter from east. 
+
+\section{Ocean model}
+The FjordOs-model was set up for the time of the pilot cruise. (Link til teknisk rapport for FjordOs-modellen). Current fields at 2 meters depth (\ref{fig:Current1}-\ref{fig:Current4}) reveals a strong outflow from the Drammens fjord during the cruise. 
+
+(Noe om styrken p\aa str\o mmen i forhold til vanlig? Temperaturfelt for \aa vise at dette er ferskvann? Mer info om FjordOs-modellen eller holder det \aa vise til den tekniske rapporten?)
+
+The simulated water level compared to the observerd water level...
+
+
+% ----------------------------------------------------------------------------
+\section{Observations}
+Nine drifters were used during the cruise in addition to CTD measurements (Fig.~\ref{fig:Utstyr}). %The ships log were used to estimate the current velocity by finding the difference between speed over ground and speed through water measured at 2.2 meters depth below the keel of the vessel. 
+
+\begin{figure}[tb]
+\centerline{
+%\includegraphics*[width=0.65\textwidth]{Figurer/Driftere_ombord}
+%\includegraphics*[width=0.36\textwidth]{Figurer/CTD}
+\includegraphics*[height=7.5cm]{Figurer/Driftere_ombord}
+\includegraphics*[height=7.5cm]{Figurer/CTD}
+}
+\caption{\small
+The nine drifters before they were released (left) and the CTD (right).}
+\label{fig:Utstyr}
+\end{figure}
+
+\subsection{Drifters}
+The drifters are made from a drainpipe 1m long, and is equipped with a "donut" approximately 20 cm from the top. The purpose of the donut is to stabilize the drifter, and to decrease vertical motion due to small surface waves. The pipe fills with water when it is dropped into the sea, and is also ballasted for the drifter to stay vertically. The ballast is tuned so that the donut is level with the water surface.
+
+The Arduiono\footnote{https://www.arduino.cc/}-based control unit of the drifters, located at the top of the drifter, is equipped with a GPS-reciever and a GSM-transmitter. The refresh rate of the positions sent to our database was set to 0.0167 Hz (updates once every minute). Unfortunately, some of the drifters failed\footnote{Stopped sending data to our database. This is being looked into by the developer of the drifters.} during the cruise.
+
+The drifters were released in groups of three in two drop zones (Fig.~\ref{fig:ZoneA} and \ref{fig:ZoneB}), and four drifters along a line in a third drop zone(Fig.~\ref{fig:ZoneC}). In addition two individual drifters were released (Fig.~\ref{fig:ZoneD}). For more details see Table~\ref{tab:Drifters}.
+
+\subsection{Trajectory model}
+\label{sect:trajmod}
+To simulate the trajectories of the drifters, we have applied the open source trajectory-model OpenDrift. This is a trajectory model under development at MET Norway, and is described by its developers as "a software for modeling the trajectories and fate of objects or substances drifting in the ocean, or even in the atmosphere". It is distributed under a GPL v2.0 license, and is available online\footnote{https://github.com/knutfrode/opendrift}.
+
+\begin{table}[tb]
+%\vspace{-1.5cm}
+{\bf Table A1: Drifters.}\\
+\label{tab:Drifters}
+\begin{tabular}{|c|cccc|} 
+        \hline
+        Drop & Drifter & Drop pos.            & Last sent pos.          & Picked up                  \\
+        No.  & No.     & and time [UTC]       & and time [UTC]          &                            \\ \hline
+             &         &          \multicolumn{3}{c}{\textit{Drop zone A - Filtvet}}                 \\ 
+        1    & 1       & 59.548130, 10.617290 & 59.612400, 10.633990    & 59.581355, 10.619952       \\
+             &         & 12:35 21.09.15       & 01:08 22.09.15          & 15:55 22.09.15             \\ 
+        2    & 8       & 59.548328, 10.617360 & 59.586281, 10.616590    & Not found                  \\
+             &         & 12:26 21.09.15       & 09:42 22.09.15          &                            \\
+        3    & 9       & 59.548351, 10.617710 & 59.527760, 10.537500    & In last sent position      \\
+             &         & 12:22 21.09.15       & 16:27 22.09.15          &                            \\ \hline 
+             &         &          \multicolumn{3}{c}{\textit{Drop zone B - R\o dtangen}}             \\
+        4    & 3       & 59.531219, 10.405220 & 59.507019, 10.426410    & 59.494862, 10.476880       \\
+             &         & 13:35 21.09.15       & 15:05 21.09.15          & 17:54 21.09.15             \\
+        5    & 5       & 59.524269, 10.404090 & 59.510750, 10.428240    & In last sendt position     \\
+             &         & 13:39 21.09.15       & 09:09 22.09.15          &                            \\
+        6    & 6       & 59.524261, 10.404080 & 59.507210, 10.546380    & 59.508735, 10.433803       \\
+             &         & 13:39 21.09.15       & 22:37:15 21.09.15       & 09:12 22.0915              \\
+        7    & 10      & 59.494839, 10.477530 & 59.519531, 10.410070    & In last sent position      \\
+             &         & 17:53 21.09.15       & 09:14 22.0915           &                            \\ \hline 
+             &         &          \multicolumn{3}{c}{\textit{Drop zone C - Horten-Moss}}             \\
+        8    & 4       & 59.430672, 10.514930 & 59.434101, 10.510170    & 59.437445, 10.507031       \\
+             &         & 10:18 22.09.15       & 12:31 22.09.15          & 14:52 22.09.15             \\
+        9    & 5       & 59.431519, 10.525370 & 59.428638, 10.511890    & Found in Hurum             \\
+             &         & 10:26 22.09.15       & 15:53 22.09.15          &                            \\
+        10   & 10      & 59.430859, 10.540190 & 59.439060, 10.496760    & In last sent position      \\
+             &         & 10:46 22.09.15	      & 08:50 23.09.15          &                            \\
+        11   & 7       & 59.432251, 10.557540 & 59.428982, 10.555320    & 59.406315, 10.532240       \\
+             &         & 11:01 22.09.15       & 11:24 22.09.15          & 14:30 22.09.15             \\ \hline 
+             &         &          \multicolumn{3}{c}{\textit{Single drops}}                          \\
+        12   & 9       & 59.528332, 10.593090 & 59.523029, 10.520360    & 59.524059 10.520618        \\
+             &         & 16:46 22.09.15       & 12:05 23.09.15          & 12:40 23.09.15             \\
+        13   & 3+6+7   & 59.505730, 10.424240 & 59.512871,  10.432890   & 59.454636 10.424795        \\
+             &         & 17:56 22.09.15       & 21:27 22.09.15          &                            \\
+        14   & 3+6+7   & 59.505692, 10.424270 & 59.474941, 10.431430    & 59.454636 10.424795        \\
+             &         & 17:56 22.09.15       & 06:00 23.09.15          &                            \\ 
+\hline 
+\end{tabular}
+\end{table}
+\clearpage
+
+
+% ----------ZONE A------------------------------------------------------------
+\subsubsection{Drop zone A: Filtvet}
+%
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=0.6\textwidth]{Figurer/zoneA}}
+\caption{\small
+The path and velocity of the drifters droppped in zone A.% together with the SOG estimated from the ship log.
+}
+\label{fig:ZoneA}
+\end{figure}
+%
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=0.495\textwidth]{Opendrift_simulations/dropzone_A_no1_fjordos_arome}
+\includegraphics*[width=0.495\textwidth]{Opendrift_simulations/dropzone_A_no1_norkyst_arome}
+}
+\caption{\small
+Simulated trajectories of drifter dropped in zone A using OpenDrift (as described in Section \ref{sect:trajmod}). Left panel is forced by the FjordOs-CL1 model, and the right panel is forced by the NorKyst-800m model. Both have wind drift from the atmospheric model Arome-2.5km, but no wave drift is applied. Particles in OpenDrift were released over a period of 8 hours.
+}
+\label{fig:opendriftA}
+\end{figure}
+%
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=0.495\textwidth]{Figurer/Driftere_vann}
+\includegraphics*[width=0.495\textwidth]{Figurer/Driftere_vann}
+}
+\caption{\small
+The drifters shortly after releasing in zone A (left) and zone B (right). OBS! Bildet til venstre skal byttes ut!
+}
+\label{fig:DriftereVann}
+\end{figure}
+
+Three drifters were dropped in zone A approximately at 12:30 pm on 21 September 2015. The drifters were dropped within two meters of each other (Fig.~\ref{fig:DriftereVann}, left).
+
+At the time of deployment the currents were week due to high water (Fig.~\ref{fig:Current2}). The drifters stayed in approximately the same positions during decending tides. At low waters at 07:00 pm the drifters started to float northwards and continued for the next approximately 12 hours. The drifters had a maximum speed of 0.5 m/s which is not found in the simulated current fields (Fig.~\ref{fig:Current2}-\ref{fig:Current3}). The drifters had parted and the drifter closest to the coastline, had a weaker velocity and changed direction first (Fig.~\ref{fig:ZoneA}). 
+
+Two of the drifters were picked up the next day. One drifter was lost. 
+
+% ----------ZONE B------------------------------------------------------------
+\subsubsection{Drop zone B: R\o dtangen}
+%
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=0.9\textwidth]{Figurer/zoneB}}
+\caption{\small
+The path and velocity of the drifters droppped in zone B.}
+\label{fig:ZoneB}
+\end{figure}
+%
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=0.495\textwidth]{Opendrift_simulations/dropzone_B_no7_fjordos_arome}
+\includegraphics*[width=0.495\textwidth]{Opendrift_simulations/dropzone_B_no7_norkyst_arome}
+}
+\caption{\small
+As for Fig.~\ref{fig:opendriftA}, but for drifter in zone B.
+}
+\label{fig:opendriftB}
+\end{figure}
+%
+Three drifters were dropped in zone B approximately at 01:30 pm on 21 September 2015. The drifters were dropped close to each other (Fig.~\ref{fig:DriftereVann}, right).
+
+The ship log revealed that the drifters were deployed close to the eastern edge of the outflow of the Drammens fjord. The drifters followed the outflow from the Drammens fjord southwards before they turned east. The speed of the drifters were approximately 0.5 m/s (Fig.~\ref{fig:ZoneB}) which is approximately the same level as in the simulated current fields (Fig.~\ref{fig:Current1}). 
+
+One of the drifters stopped sending and were substitued at approximately 06:00 pm. The drifters floated further east towards the small island Tofteholmen lying on a south-north threshold. At 10:00 pm the drifters turned westwards. The speed of the drifters increased as they approched the outlet of the Drammens fjord. This is in accordance with the simulated current fields (Fig.~\ref{fig:Current3}). At approximately 09:00 am 22 Sepmteber the drifters were picked up north of the position they were deployed.
+
+% ----------ZONE C------------------------------------------------------------
+\subsubsection{Drop zone C: Horten-Moss}
+%
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=0.9\textwidth]{Figurer/zoneC}}
+\caption{\small
+The path and velocity of the drifters droppped in zone C.}
+\label{fig:ZoneC}
+\end{figure}
+%
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=0.495\textwidth]{Opendrift_simulations/dropzone_C_no10_fjordos_arome}
+\includegraphics*[width=0.495\textwidth]{Opendrift_simulations/dropzone_C_no10_norkyst_arome}
+}
+\caption{\small
+As for Fig.~\ref{fig:opendriftA}, but for drifter in zone C.
+}
+\label{fig:opendriftC}
+\end{figure}
+%
+Four drifters were released at four positions in a cross-section of the fjord between Horten and Moss on the 22 September 2015. According to the simulated current fields (Fig.~\ref{fig:Current3}) they should have floated southwards with stronger speed the further east. 
+
+The ship log revealed a flow towards south-southwest in the whole cross section at the time of deployment. The currents were weaker towards Horten. At 11:30 a.m. the ship log revealed a weak current towards north close to Horten. All four drifters floated towards southwest, but turned towards northeast after a few hours. The drifter closest to Horten (no. 4), changed direction at approximately 11:30, the two next (no. 5 and 10) at approximately 14:40. The last (no. 7) stopped sending its position shortly after deployment.
+
+Only drifter no. 10 continued to send its position until it was picked up. The drifter stranded in a shallow area outside of the island Karljohansvern by Horten.
+
+One drifter were lost (no. 5), but was found in Hurum a few days later and returned to the research group.
+
+% ----------ZONE D------------------------------------------------------------
+\subsubsection{Single drops}
+%
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=0.9\textwidth]{Figurer/zoneD}}
+\caption{\small
+The path and velocity of the single drifters droppped in Breiangen.}
+\label{fig:ZoneD}
+\end{figure}
+%
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=0.495\textwidth]{Opendrift_simulations/dropzone_D_no12_fjordos_arome}
+\includegraphics*[width=0.495\textwidth]{Opendrift_simulations/dropzone_D_no12_norkyst_arome}
+}
+\caption{\small
+As for Fig.~\ref{fig:opendriftA}, but for single drifter in drop no. 12.
+}
+\label{fig:opendriftD1}
+\end{figure}
+%
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=0.495\textwidth]{Opendrift_simulations/dropzone_D_no13_fjordos_arome}
+\includegraphics*[width=0.495\textwidth]{Opendrift_simulations/dropzone_D_no13_norkyst_arome}
+}
+\caption{\small
+As for Fig.~\ref{fig:opendriftA}, but for single drifter in drop no. 13.
+}
+\label{fig:opendriftD2}
+\end{figure}
+%
+Two single drifters were released in Breiangen (Fig.~\ref{fig:ZoneD}).
+
+One drifter (no. 9) were released in the northeastern part of Breiangen at 16:46 on 22 September 2015. It floated slowly, first to the northeast, then south, and then north before it followed an eastern current along the coast. The simulated current fields reveal a system of unorganized eddies with weak velocities in this area at that time.
+
+One drifter consisting of three interconnected drifters (no. 3/6/7) were released south in the northwestern part of Breiangen at 17:56 on 22 September 2015. It made a anti-clockwise turn with slow velocity an accordance with the simulated current fields (Fig.~\ref{fig:Current3}). At 01:30 the drifter started flowing southwards with the outflow from the Drammens fjord. The velocity of the drifter was almost 0.4m/s east of Lang\o ya which is also in accordance with the simulated current fields (Fig.~\ref{fig:Current4}).   
+
+\clearpage
+% ----------------------------------------------------------------------------
+
+\subsection{CTD}
+The CTD measurements were performed using an ...
+
+Measurements were performed in three crossections in addtion to some extra positions which are applied on a regular basis over several years (Fig. ?).
+
+To be continued ...
+
+\begin{figure}[ht]
+\centerline{
+\includegraphics*[width=\textwidth]{Figurer/Salt_snitt}}
+\caption{\small
+Salinity in the three crossections.}
+\label{fig:CTD_Salt}
+\end{figure}
+
+
+\section{Discussion \& Conclusions}
+
+
+
+\clearpage
+\section*{\hspace{17mm}Acknowledgements}
+Thanks to the crew at the research vessel Trygve Braarud.
+
+\clearpage
+\section*{\hspace{17mm}Appendix}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_10}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_12}
+}
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_14}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_16}
+}
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_18}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_20}
+}
+\caption{\small
+Simulated current fields at 2 meters depth every other hour during the cruise.}
+\label{fig:Current1}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_22}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_24}
+}
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_26}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_28}
+}
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_30}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_32}
+}
+\caption{\small 
+Simulated current fields at 2 meters depth every other hour during the cruise.}
+\label{fig:Current2}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_34}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_36}
+}
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_38}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_40}
+}
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_42}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_44}
+}
+\caption{\small
+Simulated current fields at 2 meters depth every other hour during the cruise.}
+\label{fig:Current3}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_46}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_48}
+}
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_50}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_52}
+}
+\centerline{
+\includegraphics*[trim=2.0cm 3cm 6.0cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_54}
+\includegraphics*[trim=3.7cm 3cm 1.3cm 3.5cm,clip=true,height=7cm]{Python/stromfelt_56}
+}
+\caption{\small
+Simulated current fields at 2 meters depth every other hour during the cruise.}
+\label{fig:Current4}
+\end{figure}
+
+
+
+%\begin{table}[h]
+%\vspace{-1.5cm}
+%{\bf Table A1: ESD statistics.}\\
+%\label{tab:1}
+%\begin{tabular}{llll}
+%\small OSLO - BLINDERN 18700 & 
+%\small $T_m$ $R^2$= 71 -- 86 $T_x$ $R^2$= 69 -- 82 $T_n$ $R^2$= 49 -- 76 \\
+%\small $\Delta T_m$ $q_{0.05}$= 3.21 $q_{0.50}$= 1.33 $q_{0.95}$= 1.75 \\  
+%\small $\Delta T_x$ $q_{0.05}$= 3.09 $q_{0.50}$= 1.38 $q_{0.95}$= 2.16 \\  
+%\small $\Delta T_n$ $q_{0.05}$= 3.15 $q_{0.50}$= 1.12 $q_{0.95}$= 1.01 \\
+%\end{tabular}
+%\end{table}
+
+\clearpage
+\pagebreak
+
+%\bibliography{refs}
+%\begin{thebibliography}{1}
+%\end{thebibliography}
+
+\clearpage
+\pagebreak
+ 
+
+\end{document}
+
+
