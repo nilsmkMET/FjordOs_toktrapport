@@ -2,3 +2,4 @@
 *.log
 *.pdf
 *.toc
+!met_rapport*.pdf
