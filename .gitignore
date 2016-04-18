@@ -3,3 +3,7 @@
 *.pdf
 *.toc
 !met_rapport*.pdf
+*~
+*.zip
+*.tar*
+*.gz
