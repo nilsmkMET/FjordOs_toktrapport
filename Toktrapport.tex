@@ -488,6 +488,7 @@ At 01:30LT the drifter started going southwards with the outflow from the Dramme
 
 % ----------------------------------------------------------------------------
 \subsection{Hydrography}
+\label{sect:hydro}
 Episodes of intense precipitation leads to fierce water flow in the rivers, 
 like it is observed in Drammen River from September 17 (Figure~\ref{fig:River}).
 Such episodes are important for the water quality in the fjord. 
@@ -562,7 +563,7 @@ Sn1 & Sep 22 2015 11:16 & 59.318333 & 10.628333 & 17.94\\ \hline
 \centerline{
 \includegraphics*[width=\textwidth]{Figurer/Kart_Breiangen.png}}
 \caption{\small
-Position of CTD station (red dots) taken between Sep. 21st and Sep. 23rd 2015.
+Position of CTD station (red dots) taken between September 21st and September 23rd 2015.
 The colorbar indicate the water depth.}
 \label{fig:CTD_Kart}
 \end{figure}
@@ -650,7 +651,7 @@ water from Drammenselva is found at the east side of the Slagen transect.
 \centerline{
 \includegraphics*[width=\textwidth]{Figurer/Breiangen_21_09_2015_v2.png}}
 \caption{\small
-Salinity in the three crossections.}
+Salinity, temperature, coloured organic matter, chlorophyll fluorescense and oxygen saturation in the upper 10 meters of the Breiangen transect, taken on September 21st 2015.}
 \label{fig:brei1}
 \end{figure}
 
@@ -658,7 +659,7 @@ Salinity in the three crossections.}
 \centerline{
 \includegraphics*[width=\textwidth]{Figurer/Breiangen_23_09_2015_v2.png}}
 \caption{\small
-Salinity in the three crossections.}
+As for Figure \ref{fig:brei1}, but for September 23rd 2015.}
 \label{fig:brei2}
 \end{figure}
 
@@ -666,7 +667,7 @@ Salinity in the three crossections.}
 \centerline{
 \includegraphics*[width=\textwidth]{Figurer/Horten_22_09_2015_v2.png}}
 \caption{\small
-Salinity in the three crossections.}
+As for Figure \ref{fig:brei1}, but for the Horten transect, taken on September 22nd 2015.}
 \label{fig:horten}
 \end{figure}
 
@@ -674,7 +675,6 @@ Salinity in the three crossections.}
 \centerline{
 \includegraphics*[width=\textwidth]{Figurer/Slagen_22_09_2015_v2.png}}
 \caption{\small
-Salinity in the three crossections.}
 \label{fig:slagen}
 \end{figure}
 
@@ -682,7 +682,7 @@ Salinity in the three crossections.}
 \centerline{
 \includegraphics*[width=\textwidth]{Figurer/CF_diagram.png}}
 \caption{\small
-Salinity in the three crossections.}
+Advanced stuff, hard to explain...}
 \label{fig:CFdiagram}
 \end{figure}
 
@@ -694,7 +694,7 @@ Salinity in the three crossections.}
 \label{sect:trajmod}
 To simulate the trajectories of the drifters, we have applied the open source trajectory-model OpenDrift. This is a trajectory model under development at MET Norway, and is described by its developers as "a software for modeling the trajectories and fate of objects or substances drifting in the ocean, or even in the atmosphere". It is distributed under a GPL v2.0 license, and is available on GitHub\footnote{https://github.com/knutfrode/opendrift}.
 
-The OpenDrift model was forced with currents from the FjordOs model and with wind from the Arome-MetCoOp 2.5km (Arome2.5) atmospheric model (the same atmospheric model was as used as forcing when running the FjordOs hindcast). We also performed OpenDrift-simulations using currents from the NorKyst-800m model together wind from Arome2.5, which is the current operational setup for running trajectories at MET Norway, to compare with the new FjordOs model. We can tune a number of parameters when running OpenDrift, e.g. random walk and the winddrift factor. Random walk was not used in our simulations, but variations in winddrift factor was applied. At each of the locations of the real drifters, we released six "virtual" drifters, from 2.5 hours before to 2.5 hours after the real drifters. This was done to see if the time of the release was an important factor. The resulting trajectories can be viewed in Figure~\ref{fig:opendrift1} - \ref{fig:opendrift4}.
+The OpenDrift model was forced with currents from the FjordOs model and with wind from the Arome-MetCoOp 2.5km (Arome2.5) atmospheric model (the same atmospheric model was used as forcing when running the FjordOs hindcast). We also performed OpenDrift-simulations using currents from the NorKyst-800m model together with wind from Arome2.5, which is the current operational setup for running trajectory simulations at MET Norway, to compare with the new FjordOs model. We can tune a number of parameters when running OpenDrift, e.g. random walk and the winddrift factor. Random walk was not used in our simulations, but variations in winddrift factor was applied. At each of the locations of the real drifters, we released six "virtual" drifters, from 2.5 hours before to 2.5 hours after the real drifters. This was done to see if the time of the release was an important factor. The resulting trajectories can be viewed in Figure~\ref{fig:opendrift1} - \ref{fig:opendrift4}.
 
 
 \begin{figure}[ht]
@@ -703,7 +703,7 @@ The OpenDrift model was forced with currents from the FjordOs model and with win
 \includegraphics*[width=0.495\textwidth]{Opendrift_simulations/LTR3/tokt_drifters_winddrift_0p0_radius_0_num_6_plusminus_2p5h_norkyst_crop}
 }
 \caption{\small
-To the left is the trajectories simulated using OpenDrift, forced by the FjordOs model and Arome-MetCoOp, and to the right forced by NorKyst-800m and Arome-MetCoOp. Winddrfit factor was set to 0.0 in both simulations. Six drifters were released in the model at each of the locations and, from 2.5 hours before to 2.5 hours after, the times of the drops as described in Table \ref{tab:Drifters}.
+To the left is the trajectories simulated using OpenDrift, forced by the FjordOs model and Arome-MetCoOp, and to the right forced by NorKyst-800m and Arome-MetCoOp. Winddrift factor was set to 0.0 in both simulations. Six drifters were released in the model at each of the locations and, from 2.5 hours before to 2.5 hours after, the times of the drops as described in Table \ref{tab:Drifters}.
 }
 \label{fig:opendrift1}
 \end{figure}
@@ -741,13 +741,14 @@ Same as Figure~\ref{fig:opendrift1}, but using winddrift factor of 0.05.
 \label{fig:opendrift4}
 \end{figure}
 
+\clearpage
 
 \subsection{Hydrography}
 
 In this chapter we will compare how the salinity vary across the fjord in three 
-transects, based on observations and based on model results.
-CTD casts was taken at nine stations across Breiangen at two occations as described earlier.
-The first transect was taken Sep 21 and the second two days later 
+transects, based on observations and model results.
+CTD casts was taken at nine stations across Breiangen at two occations, as described in Chapter \ref{sect:hydro}.
+The first transect was taken on September 21st, and the second two days later 
 (Figs. \ref{fig:CTD_Mod_M1} and \ref{fig:CTD_Mod_M2}, upper panels).
 At the first occation the river water from Drammen river is concentrated on the 
 west side of the transect.
@@ -756,21 +757,19 @@ The model reflects this well
 (Fig. \ref{fig:CTD_Mod_M1} and \ref{fig:CTD_Mod_M2}, lower panels).
 The most striking difference between the observations and the model results,
 are the too high salinity below the pycnocline in the model results (5-10 psu).
-This could most probably be tracked to the open boundary conditions.
+This could most probably be tracked to the initial, and open boundary conditions.
 This feature is seen in all the four transects shown here.
 
-The transect between Horten and Moss was taken Sep 22 (Fig. \ref{fig:CTD_Mod_P}).
-
-The freshest surface water was found at the west side of this transect, just as in Breiangen.
+The transect between Horten and Moss was taken on September 22nd (Fig. \ref{fig:CTD_Mod_P}), and the freshest surface water was found at the west side of this transect, just as in Breiangen.
 This was the case both in the observations and in the model results.
 The stratification was somehat weaker in the middle of the fjord.
 This can be seen by studying the salinity at 6 m depth, thas has a minimum value in the 
 middle of the fjord, both in the observations and in the model results.
 
-The transect between Slagen and Eld{\o}ya was taken Sep 22 (Fig. \ref{fig:CTD_Mod_S}).
+The transect between Slagen and Eld{\o}ya was taken on September 22nd (Fig. \ref{fig:CTD_Mod_S}).
 In the observations the lowest surface salinity is found on the east side of the fjord,
 in contrast to the other transects further north.
-As shown earlier this fresh water mass has its origin in the Drammen river.
+As shown earlier, this fresh water mass has its origin in the Drammen river.
 This feature is not reflected in the model results at the same time.
 As we will see later, this discrepancy could be due to wrong timing, and that the freshest 
 water could be found at the east side of the transect, also in the model, at a later stage.  
@@ -838,7 +837,7 @@ The number of observatiosn in the Oslofjord is very sparse, and when we consider
 
 \clearpage
 \section*{\hspace{17mm}Acknowledgements}
-The present research and development is mostly funded by the the regional research fund Oslofjordfondet. We gratefully acknowledge the support. Lars Petter R\o ed at MET Norway has contributed with valuable discussions of both planning of the cruise and post processing of data. The authors would also like to thank the crew at the research vessel R/V Trygve Braarud. 
+The present research and development is mostly funded by the the regional research fund Oslofjordfondet. We gratefully acknowledge the support. Lars Petter R\o ed at MET Norway has contributed with valuable discussions in the planning of the cruise and post processing of data. The authors would also like to thank the crew at the research vessel R/V Trygve Braarud. 
 
 \clearpage
 \section*{\hspace{17mm}Appendix}
