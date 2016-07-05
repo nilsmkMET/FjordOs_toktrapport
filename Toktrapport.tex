@@ -87,7 +87,7 @@
 {\fontsize{28pt}{43.2pt}\selectfont \bf \sffamily Comparison of simulations and observations in the Oslofjord}  \\        % Title
 {\fontsize{14.0pt}{16.8pt}\selectfont \bf \sffamily FjordOs technical report No. 3}   % Subtitle
 
-{\fontsize{12.5pt}{15pt}\selectfont \sffamily May 2016                                          % Subtitle
+{\fontsize{12.5pt}{15pt}\selectfont \sffamily June 2016                                          % Subtitle
 \\
 \sffamily Karina Hjelmervik$^1$, Nils Melsom Kristensen$^2$, and Andre Staalstr\o m$^3$           % Author name(s)
 }
@@ -100,11 +100,11 @@
 \begin{flushleft}
 \includegraphics*[height=5.5cm,angle=7]{Figurer/Driftere_ombord} \\
 \end{flushleft}
-\vspace{-2cm}
+\vspace{-2.5cm}
 \begin{center}
 \includegraphics*[height=6cm,angle=-4]{Python/salthold_96.png} \\
 \end{center}
-\vspace{-11.5cm}
+\vspace{-11cm}
 \begin{flushright}
 \includegraphics*[height=6.5cm,angle=-10]{Figurer/CTD} 
 \end{flushright}
@@ -157,7 +157,7 @@ Karina Hjelmervik, Nils Melsom Kristensen and Andre Staalstr\o m
 
 \begin{tabular}[t]{|p{154.3mm}|}
 {\bf \sffamily Abstract}                                          \\
-A short scientific cruise onboard the research vessel (R/V) Trygve Braarud in the Oslofjord from the 21st to 23rd of September 2015 provided observations on hydrography and trajectories of drifters. The cruise was carried out as a part of the FjordOs project to investigate if targeted observations of hydrography and drifters would benefit the validation of the new Oslofjord model, the FjordOs-model. 
+A three-day scientific cruise on board the research vessel (R/V) Trygve Braarud in the Oslofjord from the 21st to 23rd of September 2015 provided observations on hydrography and trajectories of drifters. The cruise was carried out as a part of the FjordOs project to investigate if targeted observations of hydrography and drifters would benefit the validation of the new Oslofjord model, the FjordOs-model. 
 The cruise took place shortly after the storm "Petra" produced heavy rainfall in the areas surrounding the Oslofjord and caused an increase in river discharge. %Vertical CTD (Conductivity, Temperature and Depth) profiles at stations located along three different transects across the fjord reveal that the strong input of fresh water from Drammen river can be tracked halfway down the Oslofjord.
 
 Provided is documentation of the observations and comparisons with simulations using the FjordOs-model. 
@@ -192,7 +192,7 @@ Disciplinary signature       & Responsible signature      \\
 
 %\clearpage
 \section*{\hspace{17mm}Abstract}
-A short  cruise onboard the research vessel R/V Trygve Braarud in the Oslofjord from the 21st to 23rd of September 2015 provided observations on hydrography and trajectories of drifters. The cruise was carried out as a part of the FjordOs project to investigate if targeted observations of hydrography and drifters would benefit the validation of the new Oslofjord model, the FjordOs-model.
+A three-day cruise on board the research vessel (R/V) Trygve Braarud in the Oslofjord from the 21st to 23rd of September 2015 provided observations on hydrography and trajectories of drifters. The cruise was carried out as a part of the FjordOs project to investigate if targeted observations of hydrography and drifters would benefit the validation of the new Oslofjord model, the FjordOs-model.
 The cruise took place shortly after the storm "Petra" produced heavy rainfall in the areas surrounding the Oslofjord and caused an increase in river discharge. 
 %Vertical CTD (Conductivity, Temperature and Depth) profiles at stations located along three different transects across the fjord reveal that the strong input of fresh water from Drammen river can be tracked halfway down the Oslofjord.
 
@@ -224,19 +224,20 @@ The drifter trajectories are compared with simulated trajectories using the open
 \tableofcontents
 \newpage 
 \listoffigures 
-\newpage 
-\listoftables 
-
+\newpage
+\listoftables
 
 \clearpage
 % Begin arabic page numbering (starts on 1)
 %\pagenumbering{arabic}
 
 \section{Introduction}
-Provided is a documentation of a scientific cruise in the Oslofjord from the 21st to 23rd of September 2015. The cruise was a pilot study to investigate if targeted observations would benefit the validation of the new Oslofjord model \citep{roed:etal:2016}, and was carried out as part of the FjordOs project.
-
+Provided is a documentation of a scientific cruise in the Oslofjord from the 21st to 23rd of September 2015. The cruise was a pilot study to investigate if targeted observations would benefit the validation of the new Oslofjord model \citep{roed:etal:2016}, and was carried out as part of the FjordOs project. FjordOs is a cooperation between MET Norway, University College of Southeast Norway (HSN), The Norwegian Institute for Water Research (NIVA), The Norwegian Coastal Administration (Kystverket), Exxonmobil, Norwegian Defence Research Establishment (FFI), Vestfold, Buskerud, and \O stfold county, and AGNES AB Milj\o konsulent.
 
 Nine drifters were used during the cruise in addition to CTD measurements (Figure~\ref{fig:Utstyr}). The drifters were dropped in four different zones. CTD measurements were taken along three different transects across the fjord. %The ships log were used to estimate the current velocity by finding the difference between speed over ground and speed through water measured at 2.2 meters depth below the keel of the vessel. 
+The drifter trajectories and the CTD measurements were compared with model results using the FjordOs model \citep{roed:etal:2016}. 
+Drifters may also be used to estimate diffusivity. \cite{lacas:etal:2014} estimated diffusivities using a line of drifters released at the same latitude. The same approach applies with any ensemble, but requires more drifters than in this pilot study.
+
 
 \begin{figure}[b]
 \centerline{
@@ -279,14 +280,14 @@ The hourly mean (black) and maximum (red) wind speed at Gullholmen measurement s
 
 The storm "Petra" hit Buskerud, Vestfold, Telemark, and Agder from Monday 14th to Friday 18th of September 2015. The storm was caused by a main low pressure in the English channel which moved northwards crossing the North Sea. The low pressure caused an increased water level in the Oslofjord from the 17th to 18th of September before the water level was normalized around the 20th of September (Figure~\ref{fig:Waterlevel}).
 
-Due to the heavy rainfall that followed, rivers and streams were flooded and caused an increased fresh water flow into the fjord. There are two large rivers connected with the Oslofjord, one in Drammen and the other in Fredrikstad. The river in Drammen had an increase from around 650 m$^3$/s to around 1550 m$^3$/s from the 15th to 18th of September (Figure~\ref{fig:River}). The volume flux slowly decreased before reaching its normal state in the beginning of November. 
+Due to the heavy rainfall that followed, rivers and streams were flooded and caused an increased fresh water flow into the fjord. There are two large rivers connected with the Oslofjord, one in Drammen and the other in Fredrikstad with a mean discharge of 317 and 729 m$^3$/s respectively \citep{milli:etal:2011}. The river in Drammen had a larger discharge than normal during the first part of September, and an increase from around 650 m$^3$/s to around 1550 m$^3$/s from the 15th to 18th of September (Figure~\ref{fig:River}). The volume flux slowly decreased through the rest of September. 
 
 During the cruise, the weather was sunny with light or gentle breeze (Figure~\ref{fig:Wind}). The wind direction Monday afternoon was southerly, turning east. 
 
 \subsection{Ocean model}
-The FjordOs-model was set up for the time of the cruise \citep{roed:etal:2016}. Current fields at 2 meters depth (Figure~\ref{fig:Current1} - \ref{fig:Current4}) reveal a strong outflow from the Drammens fjord during the cruise. When comparing this to the sea surface salinity (SSS) i Figure~\ref{fig:Salinity1}, we conclude that this strong current is indeed a result of the increased freshwater discharge from the Drammen river.
+The FjordOs-model was set up for the time of the cruise. The FjordOs model is curviliniar, free-surface, and terrain-following model based on the Rutgers Regional Ocean Modeling System (ROMS) \citep{haidv:etal:2008,shche:mcwil:2003,shche:mcwil:2005,shche:mcwil:2009} adapted to the Oslofjord \citep{roed:etal:2016}. 
 
-%(Noe om styrken p\aa str\o mmen i forhold til vanlig? Temperaturfelt for \aa vise at dette er ferskvann? Mer info om FjordOs-modellen eller holder det \aa vise til den tekniske rapporten?)
+Current fields at 2 meters depth (Figure~\ref{fig:Current1} - \ref{fig:Current4}) reveal a strong outflow from the Drammens fjord during the cruise. When comparing this to the sea surface salinity (SSS) in Figure~\ref{fig:Salinity1}, we conclude that this strong current is indeed a result of the increased freshwater discharge from the Drammen river.
 
 %The simulated water level compared to the observerd water level...
 
@@ -299,14 +300,16 @@ The FjordOs-model was set up for the time of the cruise \citep{roed:etal:2016}. 
 \subsection{Drifter trajectories}
 The drifters used during the cruise (see Figure~\ref{fig:Utstyr}) are prototype low-cost units produced by a norwegian startup. They are made from a plastic drainpipe 1m long, and is equipped with a foam "donut" approximately 20 cm from the top. The purpose of the donut is to stabilize the drifter, and to decrease vertical motion due to small surface waves. The pipe is filled with water when it is dropped into the sea, and is  ballasted for the drifter to stay vertically. The ballast is tuned so that the donut is level with the water surface.
 
-The Arduiono\footnote{https://www.arduino.cc/}-based control unit of the drifters, located at the top of the drifter, is equipped with a GPS-reciever and a GSM-transmitter. The refresh rate of the positions sent to our database was set to 0.0167 Hz (updates once every minute). Unfortunately, some of the drifters failed\footnote{Stopped sending data to our database. This has been fixed by the developer of the drifters.} during the cruise.
+The Arduiono\footnote{https://www.arduino.cc/}-based control unit of the drifters, located at the top of the drifter, is equipped with a GPS-reciever and a GSM-transmitter. The refresh rate of the positions sent to our database was set to 0.0167 Hz (updates once every minute). Unfortunately, some of the drifters failed\footnote{Stopped sending data to our database. The developer of the drifters has now fixed this failure.} during the cruise.
 
-The drifters were released in groups of three in two drop zones (Figure~\ref{fig:ZoneA} and \ref{fig:ZoneB}), and four drifters along a line in a third drop zone (Figure~\ref{fig:ZoneC}). In addition two individual drifters were released (Figure~\ref{fig:ZoneD}). For more details see Table~\ref{tab:Drifters}.
+The drifters were released in groups of three in two drop zones (Figure~\ref{fig:ZoneA} and \ref{fig:ZoneB}), and four drifters along a line in a third drop zone (Figure~\ref{fig:ZoneC}). In addition two individual drifters were released (Figure~\ref{fig:ZoneD}). For more details see Table~\ref{tab:Drifters}. 
+
+
 
 
 \begin{table}[tb]
 %\vspace{-1.5cm}
-{\bf Table A1: Drifters.}\\
+\caption{Drifters}
 \label{tab:Drifters}
 \begin{tabular}{|c|c|ccc|} 
         \hline
@@ -315,7 +318,7 @@ The drifters were released in groups of three in two drop zones (Figure~\ref{fig
              &         &          \multicolumn{3}{c|}{\textit{Drop zone A - Filtvet}}                 \\ 
         A$_1$& 1       & 59.548130, 10.617290 & 59.612400, 10.633990    & 59.581355, 10.619952       \\
              &         & 12:35 21.09.15       & 01:08 22.09.15          & 15:55 22.09.15             \\ 
-        A$_2$& 8       & 59.548328, 10.617360 & 59.586281, 10.616590    & Not found                  \\
+        A$_2$& 8       & 59.548328, 10.617360 & 59.586281, 10.616590    & Found later in Hurum                  \\
              &         & 12:26 21.09.15       & 09:42 22.09.15          &                            \\
         A$_3$& 9       & 59.548351, 10.617710 & 59.527760, 10.537500    & In last sent position      \\
              &         & 12:22 21.09.15       & 16:27 22.09.15          &                            \\ \hline 
@@ -331,7 +334,7 @@ The drifters were released in groups of three in two drop zones (Figure~\ref{fig
              &         &          \multicolumn{3}{c|}{\textit{Drop zone C - Horten-Moss}}             \\
         C$_1$& 4       & 59.430672, 10.514930 & 59.434101, 10.510170    & 59.437445, 10.507031       \\
              &         & 10:18 22.09.15       & 12:31 22.09.15          & 14:52 22.09.15             \\
-        C$_2$& 5       & 59.431519, 10.525370 & 59.428638, 10.511890    & Found in Hurum             \\
+        C$_2$& 5       & 59.431519, 10.525370 & 59.428638, 10.511890    & Found later in Hurum             \\
              &         & 10:26 22.09.15       & 15:53 22.09.15          &                            \\
         C$_3$& 10      & 59.430859, 10.540190 & 59.439060, 10.496760    & In last sent position      \\
              &         & 10:46 22.09.15	      & 08:50 23.09.15          &                            \\
@@ -389,7 +392,7 @@ Three drifters were dropped in zone A approximately at 12:30 local time (LT is U
 At the time of deployment, the currents were weak due to high water (Figure~\ref{fig:Current2}). The drifters stayed in approximately the same positions during ebb tide. At low water around 19:00LT, the drifters started to drift northwards and continued for the next 12 hours. The drifters had a maximum speed of 0.5 m/s. % Similar speeds is not found in the simulated current fields (Figure~\ref{fig:Current2}-\ref{fig:Current3}). 
 The next morning the drifters had parted a bit, and the drifter closest to the coastline had a weaker velocity than the ones further out, and changed direction first (Figure~\ref{fig:ZoneA}). 
 
-Two of the drifters were picked up the next day. One drifter stranded, and was lost\footnote{Presumably picked up by someone, but it was never returned to us.}. 
+Two of the drifters were picked up the next day. One drifter stranded and was lost. It was later found by some locals and returned to the group.
 
 % ----------ZONE B------------------------------------------------------------
 \subsubsection{Drop zone B: R\o dtangen}
@@ -418,7 +421,7 @@ Three drifters were dropped in zone B approximately at 13:30LT on 21st of Septem
 
 Since there was little or no wind at the time of the deployment, we can give a crude estimate of the currents by estimating the ship drift. This is done by comparing the ship speed and course according to the GPS (Speed Over Ground, SOG, and Course Over Ground, COG) with speed through the water and compass heading. The difference between these two vectors give a estimate of the currents, which revealed that the drifters were deployed close to the eastern edge of the outflow of the Drammensfjord. The drifters followed the outflow from the Drammens fjord southwards before they turned east. The speed of the drifters were approximately 0.5 m/s (Figure~\ref{fig:ZoneB}). % which is approximately the same level as in the simulated current fields (Figure~\ref{fig:Current1}). 
 
-One of the drifters stopped sending, and was replaced by a working unit at approximately 18:00LT. The drifters continued further east towards the small island Tofteholmen lying on a south-north threshold. At 22:00LT the drifters turned westwards. The speed of the drifters increased as they approched the outlet of the Drammensfjord. % This is in accordance with the simulated current fields (Figure~\ref{fig:Current3}). 
+One of the drifters stopped sending, and was replaced by a working unit at approximately 18:00LT. The drifters continued further east towards the small island Tofteholmen lying on a south-north threshold. At 22:00LT the drifters turned westwards. The speed of the drifters increased as they approached the outlet of the Drammensfjord. % This is in accordance with the simulated current fields (Figure~\ref{fig:Current3}). 
 At approximately 09:00LT on the 22nd of September, the drifters were picked up north of the position they were deployed.
 
 % ----------ZONE C------------------------------------------------------------
@@ -449,7 +452,7 @@ When estimating the ship drift, using the same method as described in Section \r
 
 Only drifter no. 10 continued to send its position until it was picked up. The drifter stranded in a shallow area just east of the island Veal{\o}s north of Horten.
 
-One drifter was lost (no. 5), but was found in Hurum a few days later and returned to the research group.
+One drifter was lost during the cruise (no. 5), but was found by locals in Hurum and returned to the research group.
 
 % ----------ZONE D------------------------------------------------------------
 \subsubsection{Single drops}
@@ -520,8 +523,8 @@ The most obvious effect is that the salinity in the surface layer of the fjord
 is reduced, but the river water also carry suspended particles, organic matter, 
 nutrients as well as others substances like for instance contaminants.       
 
-It was taken vertical profiles with a CTD (Conductivity, Temperature and Depth)
-from R/V Trygve Braarud 
+Vertical profiles with a CTD (Conductivity, Temperature and Depth)
+from (R/V) Trygve Braarud was measured
 at stations located along three different transects across the fjord. 
 The CTD instrument was of the type Seabird SBE 911 plus.
 The stations are listed in Table \ref{tab:CTD} and shown in the map in 
@@ -541,7 +544,7 @@ Breiangen is about 115 m.
 
 \begin{table}[tb]
 %\vspace{-1.5cm}
-{\bf Table A2: Hydrography stations.}\\
+\caption{Hydrography stations}
 \label{tab:CTD}
 \centerline{
 \begin{tabular}{|c|c|c|c|c|} \hline
@@ -605,7 +608,7 @@ The lower panels show the depth range from 90 to 160 m, and station Fl1 is omitt
 \end{figure}
 
 The CTD instrument allows for other sensors to be installed on it. 
-R/V Trygve Braarud has a Seabird SBE 911 plus CTD, 
+(R/V) Trygve Braarud has a Seabird SBE 911 plus CTD, 
 with additional sensors for measuring oxygen concentration, turbidity, 
 chlorophyll fluorescence and coloured dissolved organic matter (CDOM). 
 All of these, except the oxygen sensor, are optical instruments. 
@@ -623,7 +626,7 @@ component of the dissolved organic matter in water.
 There is usually a strong negative correlation between salinity and CDOM, 
 since the rivers are the major source of organic matter to the coastal zone. 
 
-During the cruise with R/V Trygve Braarud, three transects 
+During the cruise with (R/V) Trygve Braarud, three transects 
 across the fjord was conducted with the CTD. Nine stations (Me1-Mm1) were taken 
 across Breiangen from Lang{\o}ya in the west to Jel{\o}ya in the east. 
 Five stations (Pi1-Pl1) were taken between Horten and Gullholmen. 
@@ -679,8 +682,8 @@ water from Drammenselva is found at the east side of the Slagen transect
 \caption{\small
 Salinity, temperature, coloured organic matter, chlorophyll fluorescense and oxygen 
 saturation in the upper 10 meters of the Breiangen transect, taken on 
-September 21st 2015. The point D1 represent the river water and the point B1
-represent marine water with algae.}
+September 21st 2015. The point D1 represents the river water and the point B1
+represents marine water with algae.}
 \label{fig:brei1}
 \end{figure}
 
@@ -689,8 +692,8 @@ represent marine water with algae.}
 \includegraphics*[width=\textwidth]{Figurer/Breiangen_23_09_2015_v2.png}}
 \caption{\small
 As for Figure \ref{fig:brei1}, but for September 23rd 2015.
-The point D2 represent the river water and the point B2
-represent marine water with algae.}
+The point D2 represents the river water and the point B2
+represents marine water with algae.}
 \label{fig:brei2}
 \end{figure}
 
@@ -707,7 +710,7 @@ As for Figure \ref{fig:brei1}, but for the Horten transect, taken on September 2
 \includegraphics*[width=\textwidth]{Figurer/Slagen_22_09_2015_v2.png}}
 \caption{\small
 As for Figure \ref{fig:brei1}, but for the Slagen transect, taken on 
-September 22nd 2015. The point S1 and S2 represent the freshest water 
+September 22nd 2015. The points S1 and S2 represent the freshest water 
 masses in this transect.}
 \label{fig:slagen}
 \end{figure}
@@ -732,7 +735,7 @@ across the fjord at the latitude of Slagen.}
 \label{sect:trajmod}
 To simulate the trajectories of the drifters, we have applied the open source trajectory-model OpenDrift. This is a trajectory model under development at MET Norway, and is described by its developers as "a software for modeling the trajectories and fate of objects or substances drifting in the ocean, or even in the atmosphere". It is distributed under a GPL v2.0 license, and is available on GitHub\footnote{https://github.com/knutfrode/opendrift}.
 
-The OpenDrift model was forced with currents from the FjordOs model and with wind from the Arome-MetCoOp 2.5km (Arome2.5) atmospheric model (the same atmospheric model was used as forcing when running the FjordOs hindcast). We also performed OpenDrift-simulations using currents from the NorKyst-800m model together with wind from Arome2.5, which is the current operational setup for running trajectory simulations at MET Norway, to compare with the new FjordOs model. We can tune a number of parameters when running OpenDrift, e.g. random walk and the winddrift factor. Random walk was not used in our simulations, but variations in winddrift factor was applied. At each of the locations of the real drifters, we released six "virtual" drifters, from 2.5 hours before to 2.5 hours after the real drifters. This was done to see if the time of the release was an important factor. The resulting trajectories can be viewed in Figure~\ref{fig:opendrift1} - \ref{fig:opendrift4}.
+The OpenDrift model was forced with currents from the FjordOs model and with wind from the Arome-MetCoOp 2.5km (Arome2.5) atmospheric model (the same atmospheric model was used as forcing when running the FjordOs hindcast). We also performed OpenDrift-simulations using currents from the NorKyst-800m model together with wind from Arome2.5, which is the current operational setup for running trajectory simulations at MET Norway, to compare with the new FjordOs model. We can tune a number of parameters when running OpenDrift, e.g. random walk and the wind drift factor. Random walk was not used in our simulations, but variations in wind drift factor was applied. At each of the locations of the real drifters, we released six "virtual" drifters, from 2.5 hours before to 2.5 hours after the real drifters. This was done to see if the time of the release was an important factor. The resulting trajectories can be viewed in Figure~\ref{fig:opendrift1} - \ref{fig:opendrift4}.
 
 
 \begin{figure}[ht]
@@ -741,7 +744,7 @@ The OpenDrift model was forced with currents from the FjordOs model and with win
 \includegraphics*[width=0.495\textwidth]{Opendrift_simulations/LTR3/tokt_drifters_winddrift_0p0_radius_0_num_6_plusminus_2p5h_norkyst_crop}
 }
 \caption{\small
-To the left is the trajectories simulated using OpenDrift, forced by the FjordOs model and Arome-MetCoOp, and to the right forced by NorKyst-800m and Arome-MetCoOp. Winddrift factor was set to 0.0 in both simulations. Six drifters were released in the model at each of the locations and, from 2.5 hours before to 2.5 hours after, the times of the drops as described in Table \ref{tab:Drifters}.
+To the left is the trajectories simulated using OpenDrift, forced by the FjordOs model and Arome-MetCoOp, and to the right forced by NorKyst-800m and Arome-MetCoOp. Wind drift factor was set to 0.0 in both simulations. Six drifters were released in the model at each of the locations and, from 2.5 hours before to 2.5 hours after, the times of the drops as described in Table \ref{tab:Drifters}.
 }
 \label{fig:opendrift1}
 \end{figure}
@@ -752,7 +755,7 @@ To the left is the trajectories simulated using OpenDrift, forced by the FjordOs
 \includegraphics*[width=0.495\textwidth]{Opendrift_simulations/LTR3/tokt_drifters_winddrift_0p1_radius_0_num_6_plusminus_2p5h_norkyst_crop}
 }
 \caption{\small
-Same as Figure~\ref{fig:opendrift1}, but using winddrift factor of 0.01.
+Same as Figure~\ref{fig:opendrift1}, but using wind drift factor of 0.01.
 }
 \label{fig:opendrift2}
 \end{figure}
@@ -763,7 +766,7 @@ Same as Figure~\ref{fig:opendrift1}, but using winddrift factor of 0.01.
 \includegraphics*[width=0.495\textwidth]{Opendrift_simulations/LTR3/tokt_drifters_winddrift_0p2_radius_0_num_6_plusminus_2p5h_norkyst_crop}
 }
 \caption{\small
-Same as Figure~\ref{fig:opendrift1}, but using winddrift factor of 0.02.
+Same as Figure~\ref{fig:opendrift1}, but using wind drift factor of 0.02.
 }
 \label{fig:opendrift3}
 \end{figure}
@@ -774,7 +777,7 @@ Same as Figure~\ref{fig:opendrift1}, but using winddrift factor of 0.02.
 \includegraphics*[width=0.495\textwidth]{Opendrift_simulations/LTR3/tokt_drifters_winddrift_0p5_radius_0_num_6_plusminus_2p5h_norkyst_crop}
 }
 \caption{\small
-Same as Figure~\ref{fig:opendrift1}, but using winddrift factor of 0.05.
+Same as Figure~\ref{fig:opendrift1}, but using wind drift factor of 0.05.
 }
 \label{fig:opendrift4}
 \end{figure}
@@ -783,47 +786,48 @@ Same as Figure~\ref{fig:opendrift1}, but using winddrift factor of 0.05.
 
 \subsection{Hydrography}
 
-In this chapter we will compare how the salinity vary across the fjord in three 
+In this chapter, we will compare how the salinity vary across the fjord in three 
 transects, based on observations and model results.
-CTD casts was taken at nine stations across Breiangen at two occations, as described in Chapter \ref{sect:hydro}.
+
+CTD casts was taken at nine stations across Breiangen at two occasions, as described in Chapter \ref{sect:hydro}.
 The first transect was taken on September 21st, and the second two days later 
 (Figures \ref{fig:CTD_Mod_M1} and \ref{fig:CTD_Mod_M2}, upper panels).
-At the first occation the river water from the Drammen river is concentrated on the 
+At the first occasion the river water from the Drammen river is concentrated on the 
 west side of the transect.
 Two days later, the river water is more evenly distributed across Breiangen.
 The model reflects this well
 (Fig. \ref{fig:CTD_Mod_M1} and \ref{fig:CTD_Mod_M2}, lower panels).
 The most striking difference between the observations and the model results,
 are the too high salinity below the pycnocline in the model results (5-10 psu).
-This could most probably be tracked to the initial, and open boundary conditions.
+This could most probably be tracked to the initial and open boundary conditions.
 This feature is seen in all the four transects shown here.
 
-The transect between Horten and Moss was taken on September 22nd (Fig. \ref{fig:CTD_Mod_P}), and the freshest surface water was found at the west side of this transect, just as in Breiangen.
+The transect from Horten to Moss was taken on September 22nd (Fig. \ref{fig:CTD_Mod_P}), and the most fresh surface water was found at the west side of this transect, just as in Breiangen.
 This was the case both in the observations and in the model results.
 The stratification was somewhat weaker in the middle of the fjord.
-This can be seen by studying the salinity at 6 m depth, that has a minimum value in the 
-middle of the fjord, both in the observations and in the model results.
+This can be seen by studying the salinity at 6 m depth where a minimum value in the 
+middle of the fjord can be observed both in the observations and in the model results.
 
 The transect between Slagen and Eld{\o}ya was taken on September 22nd (Fig. \ref{fig:CTD_Mod_S}).
 In the observations the lowest surface salinity is found on the east side of the fjord,
 in contrast to the other transects further north.
 As shown earlier, this fresh water mass has its origin in the Drammen river.
 This feature is not reflected in the model results at the same time.
-This discrepancy could be due to wrong timing, and that the freshest 
+This discrepancy could be due to wrong timing and that the most fresh 
 water could be found at the east side of the transect, also in the model, 
 at a different time.
-Figure 27 and 28 show that a strong current is flowing from Drammensfjorden
+Figure \ref{fig:Current1} and \ref{fig:Current2} show that a strong current is flowing from Drammensfjorden
 and out of the fjord, that pass on the east side of the fjord outside Slagen.
 This would explain the fresher water on this side in the CTD observations.
-But at Sep 22 13:00, the current pattern are more irregular (see Figure 29). 
+But at Sep 22 13:00, the current pattern is more irregular (see Figure {fig:Current4}). 
 
 \begin{figure}[ht]
 \centerline{
 \includegraphics*[width=\textwidth]{Figurer/Transect_M_no1_salt.png}}
 \caption{\small
 Salinity in a transect across Breiangen. 
-The upper panel show observations with CTD taken
-21/9-2016 14:00 LT. The lower panel show model results from the same time.}
+The upper panel shows observations with CTD taken
+21/9-2016 14:00 LT. The lower panel shows model results from the same time.}
 \label{fig:CTD_Mod_M1}
 \end{figure}
 
@@ -832,8 +836,8 @@ The upper panel show observations with CTD taken
 \includegraphics*[width=\textwidth]{Figurer/Transect_M_no2_salt.png}}
 \caption{\small
 Salinity in a transect across Breiangen. 
-The upper panel show observations with CTD taken
-23/9-2016 10:00 LT. The lower panel show model results from the same time.}
+The upper panel shows observations with CTD taken
+23/9-2016 10:00 LT. The lower panel shows model results from the same time.}
 \label{fig:CTD_Mod_M2}
 \end{figure}
 
@@ -842,8 +846,8 @@ The upper panel show observations with CTD taken
 \includegraphics*[width=\textwidth]{Figurer/Transect_P_salt.png}}
 \caption{\small
 Salinity in a transect from Horten to Moss. 
-The upper panel show observations with CTD taken
-22/9-2016 10:00 LT. The lower panel show model results from the same time.}
+The upper panel shows observations with CTD taken
+22/9-2016 10:00 LT. The lower panel shows model results from the same time.}
 \label{fig:CTD_Mod_P}
 \end{figure}
 
@@ -852,8 +856,8 @@ The upper panel show observations with CTD taken
 \includegraphics*[width=\textwidth]{Figurer/Transect_S_salt.png}}
 \caption{\small
 Salinity in a transect from Slagen to Eld{\o}ya. 
-The upper panel show observations with CTD taken
-22/9-2016 13:00 LT. The lower panel show model results from the same time.}
+The upper panel shows observations with CTD taken
+22/9-2016 13:00 LT. The lower panel shows model results from the same time.}
 \label{fig:CTD_Mod_S}
 \end{figure}
 
@@ -862,27 +866,27 @@ The upper panel show observations with CTD taken
 % ----------------------------------------------------------------------------
 \section{Discussion \& Conclusions}
 
-The main objective of this scientific cruise was to assess wether we could make use of targeted observations of hydrography and drift-paths in the development and validation of the new FjordOs model covering the Oslofjord.
+The main objective of this scientific cruise was to assess whether we could make use of targeted observations of hydrography and drift-paths in the development and validation of the new FjordOs model covering the Oslofjord.
 
 The main focus area for the observations was the Breiangen area, located approximately in the middle of the fjord in the north-south direction. This is one of the widest areas of the Oslofjord, except for the entrance itself, and is also very interesting because of the influence from the Drammensfjord, and Drammen river, which has a large freshwater flux that empties into the Breiangen area. Our cruise took place just after the heavy rain of the storm "Petra", and the impact of this increased freshwater flux was clearly visible in many of our measurements.
 The average salinity in the upper 5 metres based on the CTD observations was 17.3 psu in Breiangen,
 17.2 psu in the transect between Horten and Moss and 19.5 psu in the transect between 
 Slagen and Eld{\o}ya.
 
-Introducing winddrift in the simulated trajectories of the drifters is crucial to match and explain the observed drift. The best fit between simulations and observations was given by setting the winddrift factor to 1\% (the expected influence of the wind on the drifting buoys was expected to be between 0\% and 3\%). When we compare the trajectories of the drifters from our simulations to the ones that was observed, we can see that there is a very good agreement between the two in parts of the domain. Especially the drifters in Dropzone A and C (Figure \ref{fig:ZoneA} and \ref{fig:ZoneC}), and the single drops (in Figure \ref{fig:ZoneD}) showed a good comparison between observations and simulations. The drifters dropped near the mouth of the Drammensfjord (Dropzone B, Figure \ref{fig:ZoneB}) did not perform as well when compared to the observations. This could be connected to errors in the hydrography of the model, and that the water coming out of the Drammensfjord dit not spread out enough, but continued south across the Breiangen as a too narrow jet. The comparison of observed and modelled salinities in Figure \ref{fig:brei1} suggest that the freshwater layer on top of the watercolumn is too shallow, which in turn could produce currents that are too surface intensified. It could also relate to wrong timing of the freshwater release from the Drammensfjord. The errors in hydrography are likely to be related to errors in the initial conditions of the model, that comes from the operational NorKyst-800m model at MET Norway.
+Introducing wind drift in the simulated trajectories of the drifters is crucial to match and explain the observed drift. The best fit between simulations and observations was given by setting the wind drift factor to 1\% (the expected influence of the wind on the drifting buoys was expected to be between 0\% and 3\%). When we compare the trajectories of the drifters from our simulations to the ones that was observed, we can see that there is a very good agreement between the two in parts of the domain. Especially the drifters in Dropzone A and C (Figure \ref{fig:ZoneA} and \ref{fig:ZoneC}), and the single drops (in Figure \ref{fig:ZoneD}) showed a good comparison between observations and simulations. The drifters dropped near the mouth of the Drammensfjord (Dropzone B, Figure \ref{fig:ZoneB}) did not perform as well when compared to the observations. This could be connected to errors in the hydrography of the model, and that the water coming out of the Drammensfjord dit not spread out enough, but continued south across the Breiangen as a too narrow jet. The comparison of observed and modelled salinities in Figure \ref{fig:brei1} suggest that the freshwater layer on top of the water column is too shallow, which in turn could produce currents that are too surface intensified. It could also relate to wrong timing of the freshwater release from the Drammensfjord. The errors in hydrography are likely to be related to errors in the initial conditions of the model that comes from the operational NorKyst-800m model at MET Norway.
 
 
 The FjordOs-model provided, in general, more realistic drifter trajectories than the operational NorKyst-800m model.
 
 
-The number of observatiosn in the Oslofjord is very sparse, and when we consider the scales of the physical phenomenons we try to resolve with the FjordOs-model, we can clearly see the need for targeted observations to validate and improve the model. It is important to have enough observations (both temporal and spatial) to give an estimate of the mean physical state of the fjord, both with regards to hydrography and currents. In addition, targeted observations in relation to e.g. special weather events, have proven to be very useful to study specific situations, and how our model copes with these events.
+The number of observations in the Oslofjord is very sparse. When we consider the scales of the physical phenomenon, we try to resolve with the FjordOs-model, we can clearly see the need for targeted observations to validate and improve the model. It is important to have enough observations (both temporal and spatial) to give an estimate of the mean physical state of the fjord, both with regards to hydrography and currents. In addition, targeted observations in relation to e.g. special weather events have proven to be very useful to study specific situations, and how our model copes with these events.
 
 
 
 
 \clearpage
 \section*{\hspace{17mm}Acknowledgements}
-The present research and development is mostly funded by the the regional research fund Oslofjordfondet. We gratefully acknowledge the support. Lars Petter R\o ed at MET Norway has contributed with valuable discussions in the planning of the cruise and post processing of data. The authors would also like to thank the crew at the research vessel R/V Trygve Braarud. 
+The present research and development is mostly funded by the regional research fund Oslofjordfondet. We gratefully acknowledge the support. Lars Petter R\o ed at MET Norway has contributed with valuable discussions in the planning of the cruise and post processing of data. The authors would also like to thank the crew at the research vessel (R/V) Trygve Braarud. 
 
 \clearpage
 \section*{\hspace{17mm}Appendix}
